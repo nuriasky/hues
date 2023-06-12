@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+body {
+    height: 100vh;
+    background-image:url(./assets/img/background-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.8s ease-out;
+}
+
+ .header img {
+    height:35px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 55px;
+}
+
+.navbar-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s ease-out;
+}
+
+
+
+
+.title {
+    max-width: 1366px;
+    display: flex;
+    align-items: flex-end;
+    height: 680px;
+    padding: 100px;
+    /* border: #ff9105 1px solid; */
+}
+
+.title h1 {
+    color: white;
+    font-size: 8;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 90px 50px;
+    width: 90%;
+}
+
+
+.product-container{ 
+    display: flex;
+    align-items: center;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    max-width: 320px;
+    background-color: grey;
+}
