@@ -15,6 +15,9 @@ body {
     background-attachment: fixed;
 }
 
+
+        /* NAVBAR SECTION */
+
 .header {
     height: 70px;
     width: 100%;
@@ -47,7 +50,14 @@ body {
 }
 
 
+        /* HERO SECTION */
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .title {
     max-width: 1366px;
@@ -55,31 +65,50 @@ body {
     align-items: flex-end;
     height: 680px;
     padding: 100px;
-    /* border: #ff9105 1px solid; */
 }
 
 .title h1 {
     color: white;
-    font-size: 8;
+    font-size: 40px;
 }
 
 
-.home {
+        /* CARDS SECTION */
+
+#novedades {
+    max-width: 1366px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
-#categories {
+.news {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 90px 50px;
+    padding: 70px 50px 150px;
     width: 90%;
 }
 
+.section-title {
+    padding: 0 0 60px 0;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    font-family: 'Lexend Zetta';
+    font-weight: 800;
+    padding: 0 0 0 15px;
+    letter-spacing: -5px;
+}
+
+.section-title hr {
+    width: 900px;
+    height: 2px;
+    border: 0;
+    background-color: #000000;
+}
 
 .product-container{ 
     display: flex;
@@ -97,8 +126,79 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     padding: 15px;
     max-width: 320px;
-    background-color: grey;
+    border: 1px solid black;
+}
+
+.card-button {
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+        /* ABOUT US SECTION */
+
+#about {
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url(./assets/img/background-about-us.png);
+    background-repeat: no-repeat;
+    width: 1349px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 50px;
+    width: 90%;
+}
+
+.about-section .section-title h2 {
+    color: white;
+}
+
+.about-section .section-title hr {
+    background-color: white;
+}
+
+.text-container {
+    max-width: 1366px;
+    display: flex;
+    gap: 80px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.text-container img {
+    width: 420px;
+}
+
+.section-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: wheat;
+}
+
+.section-info h1{
+    text-transform: uppercase;
+}
+
+.section-info p {
+    width: 650px;
+    height: 327px;
+    color: black;
+    padding: 75px ;
+    background-color: #dddddd;
+    border: 1px solid black;
+    margin: 126px 0 0 0;
 }

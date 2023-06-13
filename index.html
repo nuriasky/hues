@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -17,9 +21,9 @@
 
             <ul class="menu">
                 <li><a class="navbar-link" href="#hero">Inicio</a></li>
-                <li><a class="navbar-link" href="#categories">categorías</a></li>
-                <li><a class="navbar-link" href="#about">colección</a></li>
-                <li><a class="navbar-link" href="#contact">sobre nosotros</a></li>
+                <li><a class="navbar-link" href="#novedades">novedades</a></li>
+                <li><a class="navbar-link" href="#colection">colección</a></li>
+                <li><a class="navbar-link" href="#about">sobre nosotros</a></li>
             </ul>
         </nav>
 
@@ -33,17 +37,44 @@
     </header>
 
     <!-- HERO SECTION -->
-    <main id="hero">
-        <div class="title">
-            <h1>IT'S COLD TIME</h1>
-        </div>
-    </main>
+    <main>
 
-    <main class="home">
+        <section id="hero">
+            <div class="title">
+                <h1>IT'S COLD TIME</h1>
+            </div>
+        </section>
 
-        <section id="categories">
-            <div class="product-container">
-                <div class="product-card"></div>
+        <!-- CARDS SECTION -->
+        <section id="novedades">
+            <div class="news">
+                <div class="section-title">
+                    <h2>NOVEDADES</h2>
+                    <hr/>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-card"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about">
+            <div class="about-section">
+                <div class="section-title">
+                    <h2>ABOUT US</h2>
+                    <hr/>
+                </div>
+
+                <div class="text-container">
+                    <img src="./assets/img/about-us-section.png" alt="">
+
+                    <div class="section-info">
+                        <h1>experimentar, no tiene <span class="span-title">límites</span></h1>
+                        <p>HUES es mucho más que una marca de ropa. Se define como una expresión de valentía y audacia, donde se combina el arriesgamiento sin miedo a mostrar nuestra autenticidad. HUES es sinónimo de tener una personalidad propia y única, permitiendo a cada persona conservar su estilo individual mientras se aventura a explorar nuevos límites.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
