@@ -152,7 +152,7 @@ main {
     justify-content: center;
     background:url(./assets/img/background-about-us.png);
     background-repeat: no-repeat;
-    width: 1349px;
+    width: 100%;
 }
 
 .about-section {
@@ -185,20 +185,49 @@ main {
 .section-info{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    color: wheat;
+    gap: 55px;
 }
 
 .section-info h1{
     text-transform: uppercase;
+    color: white;
+    font-size: 55px;
+    line-height: 70px;
 }
 
-.section-info p {
+.span-title {
+    font-style: italic;
+    padding: 2px 20px 1px 9px;
+    background-color: #f2ff43;
+    color: black;
+}
+
+.about-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 650px;
     height: 327px;
     color: black;
-    padding: 75px ;
+    padding: 0 80px ;
     background-color: #dddddd;
-    border: 1px solid black;
-    margin: 126px 0 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+.about-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.span-text-one {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.span-text-two {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
 }
