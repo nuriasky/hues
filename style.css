@@ -16,6 +16,7 @@ body {
 }
 
 
+
         /* NAVBAR SECTION */
 
 .header {
@@ -71,6 +72,7 @@ main {
     color: white;
     font-size: 40px;
 }
+
 
 
         /* CARDS SECTION */
@@ -142,6 +144,7 @@ main {
 }
 
 
+
         /* ABOUT US SECTION */
 
 #about {
@@ -158,7 +161,7 @@ main {
 .about-section {
     display: flex;
     flex-direction: column;
-    padding: 70px 50px;
+    padding: 55px 50px;
     width: 90%;
 }
 
@@ -180,12 +183,13 @@ main {
 
 .text-container img {
     width: 420px;
+
 }
 
 .section-info{
     display: flex;
     flex-direction: column;
-    gap: 55px;
+    gap: 70px;
 }
 
 .section-info h1{
@@ -231,3 +235,192 @@ main {
     font-weight: 600;
     text-decoration: underline;
 }
+
+
+        /* CONTACT US SECTION */
+
+#contact{
+    padding: 110px 10px 35px 10px;
+    max-width: 1366px;
+    background-image: url(./assets/img/background-contact-us.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+}
+
+#contact .section-title {
+    padding: 0 0 50px 150px;
+}
+
+.content-contact{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-area{
+    display: grid;
+    grid-template-areas:
+    "form maps"
+    "form maps"
+    "form social"
+    ;
+    gap: 40px;
+}
+
+
+
+.form{
+    grid-area: form;
+}
+
+.form form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.form input{
+    padding: 10px 20px;
+    width: 575px;
+    height: 45px;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.80);
+    margin: 0 0 12px;
+    font-size: 15px;
+}
+
+.namemail {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 575px;
+    margin-top: 15px;
+}
+
+#mensaje{
+    padding: 23px 80px 330px 20px;
+}
+
+
+.form button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 12px;
+    width: 575px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color:black;
+    color: white;
+
+}
+
+.contact-subtitle {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 0 0 8px 0;
+}
+
+.contact-subtitle hr {
+    border: 0;
+    width: 70px;
+    height: 3.5px;
+    background-color: black;
+}
+
+.contact-subtitle h2 {
+    font-size: 27px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+.maps-container{
+    grid-area: maps;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+.maps {
+    background-color: rgba(255, 255, 255, 0.60);
+    border: 1px solid black;
+    padding: 20px 77px;
+}
+
+.social{
+    grid-area: social;
+    width: 575px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+.social .contact-subtitle {
+    justify-content: start;
+    width: 575px;
+}
+
+
+.grid-social{
+    display: grid;
+    grid-template-areas:
+    "facebook instagram"
+    "twitter email"
+    ;
+    gap: 27px;
+    width: 575px;
+}
+
+
+.facebook{
+    grid-area: facebook;
+}
+
+.instagram{
+    grid-area: instagram;
+}
+
+.twitter{
+    grid-area: twitter;
+}
+
+.email{
+    grid-area: email;
+}
+
+.cards-container{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.60);
+    border: 1px solid black;
+}
+
+.cards-container img{
+    width: 40px;
+
+}
+
+.info-media p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
