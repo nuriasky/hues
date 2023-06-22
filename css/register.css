@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#register {
+    max-width: 1366px;
+    background-image:url(../assets/img/background-register.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.register-container {
+    width: 650px;
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.logo {
+    justify-self: start;
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 110px;
+}
+
+.register-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 30px 0 0 0;
+    gap: 15px;
+}
+
+.register-title h1{
+    font-weight: 700;
+    color: black;
+    font-size: 31px;
+    width: 380px;
+    padding: 5px 0;
+}
+
+
+.form-register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 380px;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.form-register label{
+    color: #383838;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+
+.form-register input{
+    outline: none;
+    padding: 10px 20px;
+    width: 380px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1.3px solid #5e5e5e;
+    margin: 0 0 15px;
+}
+
+.terms{
+    width: 350px;
+    display: flex;
+    gap: 5px;
+    font-size: 13px;
+    color: #878787;
+}
+
+.login-and-next{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-and-next p{
+    color: #3a3a3a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-and-next a{
+    text-decoration: none;
+    color: #798021;
+    font-weight: 600;
+}
+
+.button-register{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    width: 380px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    background:black;
+    color: white;
+}
+
+.register-title p {
+    color: #636363;
+}
+
+.register-google{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    width: 380px;
+    border-radius: 5px;
+    border: 1.5px solid #a3a3a3;    
+}
+
+.register-google a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2d2d2d;
+    font-weight: 600;
+}
