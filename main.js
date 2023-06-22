@@ -1,13 +1,25 @@
-window.addEventListener("scroll", () => {
-    const header = document.querySelector(".header");
-        if (window.scrollY > 450) {
+const header = document.querySelector(".header");
+const contenedorGeneradora = document.querySelector(".product-card")
+
+
+const scrollHeader = () => {
+    if (window.scrollY > 450) {
         header.style.background = "black";
         } else {
         header.style.background = "transparent";
         }
-});
+}
 
 
+const init = () => {
+    window.addEventListener("scroll", scrollHeader);
+};
+
+init();
+
+
+
+//ESTO DEBERIA IR EN OTRO ARCHIVO, DEBES MOVERLO
 const productos = [
     {
         id: 1,
@@ -65,7 +77,7 @@ const productos = [
 ]
 
 
-const contenedorGeneradora = document.querySelector(".product-card")
+
 
 const createCardTemplate = (product) => {
     const {image, nombre, precio} = product;
