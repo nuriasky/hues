@@ -9,7 +9,6 @@
             /* ABOUT US SECTION */
     #about {
         max-width: 100%;
-        flex-direction: column;
         background-image: url(../img/mediaqueries-about-us.png);
         gap: 20px;
     }
@@ -19,8 +18,11 @@
     }
 
     .section-info {
-        grid-area: text;
         gap: 65px;
+    }
+
+    .text-container {
+        justify-content: center;
     }
 
     .text-container img{
