@@ -1,0 +1,98 @@
+@media (max-width:991.98px){
+
+            /* TITLES SECTION */
+    .section-title hr{
+        width: 600px;
+
+    }
+
+            /* ABOUT US SECTION */
+    #about {
+        max-width: 100%;
+        flex-direction: column;
+        background-image: url(../img/mediaqueries-about-us.png);
+        gap: 20px;
+    }
+
+    .about-section {
+        padding: 60px 50px 90px 50px;
+    }
+
+    .section-info {
+        grid-area: text;
+        gap: 65px;
+    }
+
+    .text-container img{
+        display: none;
+    }
+
+            /* CONTACT US SECTION */
+    
+    #contact {
+        max-width: 100%;
+        background-image: url(../img/mediaqueries-contact-us.png);
+        padding: 110px 10px;
+    }
+
+    #contact .section-title {
+        padding: 30px 0 50px 60px;
+    }
+
+    .grid-area{
+        grid-template-areas:
+        "form"
+        "maps"
+        "social"
+        ;
+    }
+
+    #mensaje{
+        padding: 23px 80px 170px 20px;
+    }
+
+
+            /* FOOTER SECTION */
+
+    .newsletter {
+        padding: 0 0 20px 0;
+    }
+
+    .footer-container {
+        gap: 0;
+        display: grid;
+        grid-template-areas:
+        "logo logo logo"
+        "categories help contact"
+        ;
+    }
+
+    .footer-logo {
+        width: 600px;
+        height: 130px;
+        grid-area: logo;
+    }
+
+    .footer-logo img {
+        width: 150px;
+   
+    }
+
+    .categories {
+        grid-area: categories;
+    }
+
+    .help {
+        grid-area: help;
+    }
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .links-container{
+        width: 600px;
+        justify-content: center;
+    }
+
+}

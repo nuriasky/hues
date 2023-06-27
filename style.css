@@ -510,7 +510,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: start;
-    gap: 80px;
+    gap: 60px;
 }
 
 .footer-logo {
@@ -523,6 +523,13 @@ footer {
 
 .footer-logo img {
     width: 220px;
+}
+
+.links-container {
+    display: flex;
+    align-content: space-between;
+    align-items: start;
+    gap: 80px;
 }
 
 .footer-links h3{
