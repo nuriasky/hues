@@ -14,33 +14,30 @@ main {
     justify-content: center;
 }
 
-#login {
+#register {
     max-width: 1366px;
-    background-image:url(../assets/img/background-login.png);
+    background-image:url(../img/background-register.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: end;
 }
 
-.login-container {
+.register-container {
     width: 650px;
-    padding: 112px 20px;
+    padding: 70px 20px;
     background-color: white;
 }
 
 .logo {
     justify-self: start;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .logo img{
     width: 110px;
 }
 
-.login-section{
+.register-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +46,7 @@ main {
     gap: 15px;
 }
 
-.login-title h1{
+.register-title h1{
     font-weight: 700;
     color: black;
     font-size: 31px;
@@ -57,17 +54,104 @@ main {
     padding: 5px 0;
 }
 
-.login-google{
+
+.form-register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.form-register label{
+    color: #383838;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 12px;
+}
+
+.form-register input{
+    outline: none;
+    padding: 10px 20px;
+    width: 350px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1.3px solid #5e5e5e;
+    margin: 0 0 15px;
+}
+
+.terms{
+    width: 330px;
+    display: flex;
+    gap: 5px;
+    font-size: 13px;
+    color: #878787;
+}
+
+.login-and-next{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.login-and-next p{
+    color: #3a3a3a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-and-next a{
+    text-decoration: none;
+    color: #798021;
+    font-weight: 600;
+}
+
+.submit input {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    background:black;
+    color: white;
+}
+
+/* .button-register{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    background:black;
+    color: white;
+} */
+
+
+
+.register-title p {
+    color: #636363;
+}
+
+.register-google{
     display: flex;
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
     padding: 12px;
-    width: 380px;
+    width: 350px;
     border-radius: 5px;
     border: 1.5px solid #a3a3a3;    
 }
 
-.login-google a{
+.register-google a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -77,103 +161,20 @@ main {
     font-weight: 600;
 }
 
-.divider{
-    display: flex;
-    align-items: center;
-    overflow: visible;
-    position: relative;
-    margin-top: 20px;
-}
-.divider hr{
-    width: 300px;
-    height: 0.6px;
-    border: 0;
-    position: relative;
-    background-color: #333333;
+
+        /* FORM CSS-JS */
+
+.form-field.error input {
+    border: 1px solid #e52535;
 }
 
-.divider span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    background-color: white;
-    position: absolute;
-    top: -11px;
-    left: 130px;
-    font-size: 15px;
-    color: #2d2d2d;
+.form-field small {
+    color: #e52535;
+    max-width: 350px;
+    text-align: center;
+    display: none;
 }
 
-.form-login{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 380px;
-    margin-top: 15px;
-    gap: 5px;
+.form-field.success input {
+    border: 1px solid #ac13b9;
 }
-
-.form-login label{
-    color: #383838;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-left: 12px;
-}
-
-.form-login input{
-    outline: none;
-    padding: 10px 20px;
-    width: 380px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1.3px solid #5e5e5e;
-    margin: 0 0 10px;
-}
-
-.terms{
-    width: 350px;
-    display: flex;
-    gap: 5px;
-    font-size: 13px;
-    color: #878787;
-}
-
-.register-and-next{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.register-and-next p{
-    color: #3a3a3a;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.register-and-next a{
-    text-decoration: none;
-    color: #798021;
-    font-weight: 600;
-}
-
-.button-login{
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    padding: 12px;
-    width: 380px;
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: uppercase;
-    background:black;
-    color: white;
-}
-
-.login-title p {
-    color: #636363;
-}
-
