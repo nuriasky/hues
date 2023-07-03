@@ -1,4 +1,4 @@
-const formRegister = document.getElementById("register-id");
+const formRegister = document.querySelector("#register-id");
 const inputName = document.querySelector("#name");
 const inputEmail = document.querySelector("#email");
 const inputPass = document.querySelector("#password");
@@ -166,7 +166,7 @@ const submitHandler = (e) => {
             phone: inputPhone.value,
         });        
         saveToLocalStorage();
-        alert("Amix lo lograste, por fin :)")
+        alert("Has sido registrado exitosamente🎉")
         window.location.href = "../../index.html"
     };
 };
