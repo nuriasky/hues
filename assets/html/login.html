@@ -40,28 +40,34 @@
                         <span>or</span>
                     </div>
 
-                    <form class="form-login">
-                        <label for="email">e-mail:</label>
-                        <input type="email" id="email" required>
-                        
-                        <label for="password">contraseña:</label>
-                        <input type="password" id="password" required>
+                    <form class="form-login" id="login-id">
+
+                        <div class="form-field">
+                            <label for="email">e-mail:</label>
+                            <input
+                            type="email"
+                            id="email">
+                            <small></small>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="password">contraseña:</label>
+                            <input
+                            type="password"
+                            id="password">
+                            <small></small>                            
+                        </div>
+
+                        <div class="form-field register-and-next">
+                            <p>¿Aún no tienes una cuenta? <a href="register.html">Regístrate</a></p>
+                            <button name="login" class="button-login">Iniciar sesión</button>
+                        </div>
                     </form>
-
-                    <div class="terms">
-                        <input type="checkbox" id="checkbox">
-                        <label for="checkbox">Recuérdame</label>
-                    </div>
-                        
-                    <div class="register-and-next">
-                        <p>¿Aún no tienes una cuenta? <a href="register.html">Regístrate</a></p>
-                        <button name="login" class="button-login">Iniciar sesión</button>
-                    </div>
-
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="../js/login.js"></script>
 </body>
 </html>

@@ -43,7 +43,7 @@ const emailIsValid = (input) => {
 };
 
 const isExistingEmail = (input) => {
-    users.some((user) => user.email === input.value.trim());
+    return users.some((user) => user.email === input.value.trim());
 };
 
 const isPassSecure = (input) => {

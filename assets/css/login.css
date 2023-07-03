@@ -177,3 +177,20 @@ main {
     color: #636363;
 }
 
+
+        /* FORM CSS-JS */
+
+.form-field.error input {
+    border: 1px solid #e52535;
+}
+
+.form-field small {
+    color: #e52535;
+    max-width: 350px;
+    text-align: center;
+    display: none;
+}
+
+.form-field.success input {
+    border: 1px solid #ac13b9;
+}
