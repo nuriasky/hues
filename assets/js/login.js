@@ -56,8 +56,6 @@ const isValidAccount = () => {
     return valid;
 };
 
-
-
 const login = (e) => {
     e.preventDefault();
 
@@ -67,7 +65,6 @@ const login = (e) => {
         window.location.href = "../../index.html";
     };
 };
-
 
 
 const init = () => {
