@@ -1,10 +1,11 @@
         /* CARDS SECTION */
 .category:hover {
     border: none;
+    border-radius: 15px;
     background-color: black;
     color: white;
     padding: 10.6px 25.6px;
-    transition: all 0.1s ease-in;
+    transition: all 0.2s ease-in-out;
 }
 
 .category:active {
