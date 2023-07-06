@@ -29,3 +29,15 @@
 .btn-add:active {
     background: #44462a;
 }
+
+.btn-load:hover {
+    transition: all 0.2s ease-in;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 15.6px 50.5px;
+}
+
+.btn-load:active {
+    background-color: rgb(75, 75, 75);
+}

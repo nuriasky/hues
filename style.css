@@ -227,6 +227,10 @@ main {
     justify-content: center;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .btn-load {
     background-color: white;
     border: 1px solid black;
@@ -236,7 +240,8 @@ main {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
-  }
+    transition: all 0.1s ease-out;
+}
 
 
         /* ABOUT US SECTION */

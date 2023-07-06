@@ -1,5 +1,6 @@
 const header = document.querySelector(".header");
-const productsContainer = document.querySelector(".product-card")
+const productsContainer = document.querySelector(".product-card");
+const buttonLoad = document.querySelector(".btn-load");
 
 
 const scrollHeader = () => {
@@ -43,17 +44,30 @@ const createCardTemplate = (product) => {
 };
 
 const renderCardsProducts = (productsList) => {
-    productsContainer.innerHTML = productsList.map(createCardTemplate).join("");
+    productsContainer.innerHTML += productsList.map(createCardTemplate).join("");
 }; 
 
+const isLastIndexOf = () => {
+    return appState.currentProductsIndex === appState.productsLimit -1;
+}
 
-//
+
+const showMoreCardsProducts = () => {
+    appState.currentProductsIndex += 1;
+    let {products, currentProductsIndex} = appState;
+    renderCardsProducts(products[currentProductsIndex]);
+    if (isLastIndexOf()) {
+        buttonLoad.classList.add("hidden");
+    }
+}
+
 
 
 
 const init = () => {
-    renderCardsProducts(products)
     window.addEventListener("scroll", scrollHeader);
+    renderCardsProducts(appState.products[appState.currentProductsIndex]);
+    buttonLoad.addEventListener("click", showMoreCardsProducts)
 };
 
 init();
