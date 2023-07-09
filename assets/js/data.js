@@ -35,7 +35,7 @@ const products = [
         id: 5,
         name: "Leather Campera Negra",
         price: 35000,
-        category: "buzos y camperas",
+        category: "abrigos y camperas",
         image:"./assets/products/leather-campera.png",
     },
 
@@ -43,7 +43,7 @@ const products = [
         id: 6,
         name: "Blazer Beige",
         price: 17000,
-        category: "buzos y camperas",
+        category: "abrigos y camperas",
         image:"./assets/products/blazer-beige.png",
     },
 
@@ -91,7 +91,7 @@ const products = [
         id: 12,
         name: "Beaded Sweater",
         price: 23300,
-        category: "buzos y camperas",
+        category: "abrigos y camperas",
         image:"./assets/products/beaded-sweater.png",
     },
 
@@ -99,7 +99,7 @@ const products = [
         id: 13,
         name: "Shacket Black",
         price: 11800,
-        category: "buzos y camperas",
+        category: "abrigos y camperas",
         image:"./assets/products/shacket-black.png",
     },
 
@@ -107,7 +107,7 @@ const products = [
         id: 14,
         name: "Twill Jacket",
         price: 18600,
-        category: "buzos y camperas",
+        category: "abrigos y camperas",
         image:"./assets/products/twill-jacket.png",
     },
 
@@ -115,7 +115,7 @@ const products = [
         id: 15,
         name: "RACE Jacket",
         price: 22400,
-        category: "buzos y camperas",
+        category: "abrigos y camperas",
         image:"./assets/products/race-jacket.png",
     },
 
