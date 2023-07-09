@@ -215,7 +215,8 @@
             /* PRODUCTS SECTION */
     
     .news {
-        padding: 70px 15px 150px;
+        padding: 70px 10px 150px;
+        width: 98%;
     }
 
     .cards-categories {
@@ -229,6 +230,10 @@
         font-size: 11px;
     }
 
+    .news .cards-container {
+        padding: 10px;
+    }
+
     .product-card {
         gap: 11px;
     }
@@ -236,12 +241,12 @@
     .card {
         gap: 5px;
         padding: 10px;
-        max-width: 160px;
+        max-width: 170px;
         justify-content: space-between;
     }
 
     .card img {
-        width: 133px;
+        width: 145px;
     }
 
     .info-card {
@@ -254,7 +259,7 @@
     }
 
     .title-card {
-        width: 130px;
+        width: 145px;
         text-align: center;
     }
 
