@@ -215,8 +215,17 @@
             /* PRODUCTS SECTION */
     
     .news {
-        padding: 70px 10px 150px;
+        padding: 70px 10px;
         width: 98%;
+    }
+
+    .news .section-title,
+    .cards-categories {
+        padding: 0 25px 0;
+    }
+
+    .news .cards-categories {
+        padding: 25px;
     }
 
     .cards-categories {
@@ -230,12 +239,8 @@
         font-size: 11px;
     }
 
-    .news .cards-container {
-        padding: 10px;
-    }
-
     .product-card {
-        gap: 11px;
+        gap: 14px;
     }
 
     .card {
@@ -274,6 +279,15 @@
     .btn-add {
         font-size: 10px;
         padding: 8px 0;
+    }
+
+    .load-container {
+        padding: 30px 0 0 0;
+    }
+
+    .btn-load {
+        padding: 10px 30px;
+        font-size: 14px;
     }
 
 
