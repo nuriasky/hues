@@ -163,12 +163,6 @@
         background-image: url(../img/background-responsive.png);
     }
 
-    .cards-categories {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
             /* HEADER SECTION */
     .header {
         height: 55px;
@@ -216,6 +210,80 @@
     
     .section-title hr {
         width: 300px;
+    }
+
+            /* PRODUCTS SECTION */
+    
+    .news {
+        padding: 70px 15px 150px;
+    }
+
+    .cards-categories {
+        overflow: auto;
+        padding: 18px 0 22px 0;
+    }
+
+    .category {
+        padding: 3px 25px;
+        border-radius: 15px;
+        font-size: 13px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2px;
+        padding: 15px;
+        max-width: 130px;
+        border: 1px solid black;
+        transition: all 0.3s ease-in;
+    }
+
+    .card img {
+        width: 90px;
+        transition: all 0.4s ease-out;
+    }
+
+    .product-card {
+        gap: 20px;
+    }
+
+    .card {
+        gap: 5px;
+        padding: 10px;
+        max-width: 150px;
+    }
+
+    .card img {
+        width: 130px;
+    }
+
+    .info-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+        padding: 5px 0;
+    }
+
+    .title-card {
+        width: 120px;
+        text-align: center;
+    }
+
+    .title-card h3 {
+        font-size: 13px;
+    }
+
+    .price-card {
+        font-size: 15px;
+    }
+
+    .btn-add {
+        font-size: 10px;
+        padding: 8px 0;
     }
 
 
@@ -376,6 +444,11 @@
     }
 
     .footer-links a {
+        font-size: 11px;
+    }
+
+    .hues-dr {
+        padding: 25px 0;
         font-size: 11px;
     }
 }
