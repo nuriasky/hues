@@ -226,37 +226,22 @@
     .category {
         padding: 3px 25px;
         border-radius: 15px;
-        font-size: 13px;
-    }
-
-    .card {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 2px;
-        padding: 15px;
-        max-width: 130px;
-        border: 1px solid black;
-        transition: all 0.3s ease-in;
-    }
-
-    .card img {
-        width: 90px;
-        transition: all 0.4s ease-out;
+        font-size: 11px;
     }
 
     .product-card {
-        gap: 20px;
+        gap: 11px;
     }
 
     .card {
         gap: 5px;
         padding: 10px;
-        max-width: 150px;
+        max-width: 160px;
+        justify-content: space-between;
     }
 
     .card img {
-        width: 130px;
+        width: 133px;
     }
 
     .info-card {
@@ -269,12 +254,12 @@
     }
 
     .title-card {
-        width: 120px;
+        width: 130px;
         text-align: center;
     }
 
     .title-card h3 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .price-card {
