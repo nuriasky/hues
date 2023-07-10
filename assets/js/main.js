@@ -53,7 +53,7 @@ const createCardTemplate = (product) => {
             data-id="${id}"
             data-name="${name}"
             data-price="${price}"
-            data-img="${image}"
+            data-image="${image}"
             >
             añadir al carrito
         </button>
