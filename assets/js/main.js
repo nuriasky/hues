@@ -5,6 +5,16 @@ const categoriesContainer = document.querySelector(".cards-categories");
 const categoriesList = document.querySelectorAll(".category");
 const cartBtn = document.querySelector(".cart-label");
 const cartMenu = document.querySelector(".cart")
+const menuBtn = document.querySelector(".burger-menu");
+const navbarMenu = document.querySelector(".menu");
+const overlay = document.querySelector(".overlay");
+const cartProducts = document.querySelector(".cart-container");
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+const saveCart = () => {
+    localStorage.setItem("cart", JSON.stringify())
+}
 
 
 const scrollHeader = () => {
@@ -128,16 +138,91 @@ const applyFilter = ({target}) => {
 
 
 const toggleCart = () => {
-    cartMenu.classList.toggle("open-cart")
+    cartMenu.classList.toggle("open-cart");
+    if (navbarMenu.classList.contains("open-menu")) {
+        navbarMenu.classList.remove("open-menu");
+        return;
+    };
+    overlay.classList.toggle("show-overlay")
 }
+
+const toggleMenu = () => {
+    navbarMenu.classList.toggle("open-menu");
+    if (cartMenu.classList.contains("open-cart")) {
+        cartMenu.classList.remove("open-cart");
+        return;
+    };
+    overlay.classList.toggle("show-overlay")
+}
+
+const closeOnScroll = () => {
+    if (
+        !navbarMenu.classList.contains("open-menu") && !cartMenu.classList.contains("open-cart")
+    ) {
+        return;
+    }
+    navbarMenu.classList.remove("open-menu");
+    cartMenu.classList.remove("open-cart");
+    overlay.classList.remove("show-overlay");
+}
+
+const closeOnClick = (e) => {
+    if (!e.target.classList.contains("navbar-link")) {
+        return;
+    };
+    navbarMenu.classList.remove("open-menu");
+    overlay.classList.remove("show-overlay");
+};
+
+const closeOnOverlayClick = () => {
+	navbarMenu.classList.remove("open-menu");
+	cartMenu.classList.remove("open-cart");
+	overlay.classList.remove("show-overlay");
+};
+
+
+        //CART LOGIC
+
+const createProductCartTemplate = (productCart) => {
+    const {id, name, price, image, quantity} = productCart;
+    return `
+    <div class="cart-item">
+        <img
+            src=${image}
+            alt=${name}/>
+        <div class="item-info">
+            <h3 class="item-title">${name}</h3>
+            <span class="item-price">$${price}</span>
+        </div>
+        <div class="item-handler">
+            <span class="quantity-handler down" data-id=${id}>-</span>
+            <span class="item-quantity">${quantity}</span>
+            <span class="quantity-handler up" data-id=${id}>+</span>
+        </div>
+    </div> 
+    `
+}
+
+const renderCart = () => {
+    if (!cart.length) {
+        cartProducts.innerHTML = `<p class="empty-msg">Tu carrito de compras está vacío.</p>`;
+        return;
+    };
+    cartProducts.innerHTML = cart.map(createProductCartTemplate).join("")
+};
 
 
 const init = () => {
     window.addEventListener("scroll", scrollHeader);
     renderCardsProducts(appState.products[appState.currentProductsIndex]);
     buttonLoad.addEventListener("click", showMoreCardsProducts);
-    categoriesContainer.addEventListener("click", applyFilter)
-    cartBtn.addEventListener("click", toggleCart)
+    categoriesContainer.addEventListener("click", applyFilter);
+    cartBtn.addEventListener("click", toggleCart);
+    menuBtn.addEventListener("click", toggleMenu);
+    window.addEventListener("scroll", closeOnScroll);
+    navbarMenu.addEventListener("click", closeOnClick);
+    overlay.addEventListener("click", closeOnOverlayClick);
+    document.addEventListener("DOMContentLoaded", renderCart)
 };
 
 init();
