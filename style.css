@@ -834,15 +834,16 @@ footer {
 
         /* SUCCESS MESSAGE */
 .add-modal {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding: 15px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-white);
-    background-color: green;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    color: black;
+    background-color: #f6ff72;
+    font-size: 14px;
     transition: all 0.5s ease-out;
     transform: translateY(200%);
 }

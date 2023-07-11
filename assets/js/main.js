@@ -252,7 +252,7 @@ const showSuccessModal = (msg) => {
 
     setTimeout(() => {
         successModal.classList.remove("active-modal");
-    }, 1500);
+    }, 2000);
 };
 
 const createProductCart = (product) => {
@@ -299,12 +299,12 @@ const addProduct = (e) => {
         //Agregamos unidad al producto
         addUnitToProduct(product);
         //Feedback
-        showSuccessModal("Una unidad del producto ha sido agregado al carrito");
+        showSuccessModal("Una unidad del producto ha sido agregada al carrito.");
     } else { //Si el producto NO existe
         //Creamos el nuevo producto en el array
         createProductCart(product);
         //Feedback
-        showSuccessModal("El producto ha sido agregado al carrito");
+        showSuccessModal("El producto ha sido agregado al carrito.");
     };
     //Actualizar data del carrito
     updateCartState();
@@ -368,7 +368,7 @@ const completeCartAction = (confirmMsg, successMsg) => {
 }
 
 const completeBuy = () => {
-    completeCartAction("¿Desea completa su compra?", "Gracias por su compra!")
+    completeCartAction("¿Desea completar su compra?", "Gracias por su compra!")
 }
 
 const deleteCart = () => {
