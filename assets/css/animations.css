@@ -49,6 +49,14 @@
 .show-overlay {
     display: block;
 }
+
+        /* CART SECTION */          
+.quantity-handler:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: all 0.1s ease-in;
+}
   
 
         /* CARDS SECTION */
